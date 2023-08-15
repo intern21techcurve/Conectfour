@@ -4,8 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.first.connectfour.Controller2"  >
-">
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.first.connectfour.Controller2">
 
     <columnConstraints>
         <ColumnConstraints />
@@ -17,11 +16,14 @@
     </rowConstraints>
 
     <children>
-        <Pane prefHeight="25.0" prefWidth="502.0" GridPane.columnSpan="2" />
-        <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+        <Pane prefHeight="15.0" prefWidth="502.0" GridPane.columnSpan="2" />
+        <Pane fx:id="insertedDiscsPane" prefHeight="572.0" prefWidth="200.0" GridPane.rowIndex="1" />
         <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <children>
                 <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="246.0" />
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="266.0" VBox.vgrow="ALWAYS" />
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="300.0" text="Set Name" textFill="#362f2f" textOverrun="CLIP" />
                 <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="35.0" prefWidth="302.0" text="Player One" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="29.0" />
